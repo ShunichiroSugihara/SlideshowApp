@@ -13,6 +13,7 @@
 		19B4B4102ADEB4E800E78BB9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B40E2ADEB4E800E78BB9 /* Main.storyboard */; };
 		19B4B4122ADEB4E800E78BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4112ADEB4E800E78BB9 /* Assets.xcassets */; };
 		19B4B4152ADEB4E800E78BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4132ADEB4E800E78BB9 /* LaunchScreen.storyboard */; };
+		19B4B41D2ADEC40100E78BB9 /* ZoomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4B41C2ADEC40100E78BB9 /* ZoomingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		19B4B4112ADEB4E800E78BB9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19B4B4142ADEB4E800E78BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19B4B4162ADEB4E800E78BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19B4B41C2ADEC40100E78BB9 /* ZoomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				19B4B4082ADEB4E700E78BB9 /* AppDelegate.swift */,
 				19B4B40A2ADEB4E700E78BB9 /* SceneDelegate.swift */,
 				19B4B40C2ADEB4E800E78BB9 /* ViewController.swift */,
+				19B4B41C2ADEC40100E78BB9 /* ZoomingViewController.swift */,
 				19B4B40E2ADEB4E800E78BB9 /* Main.storyboard */,
 				19B4B4112ADEB4E800E78BB9 /* Assets.xcassets */,
 				19B4B4132ADEB4E800E78BB9 /* LaunchScreen.storyboard */,
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				19B4B41D2ADEC40100E78BB9 /* ZoomingViewController.swift in Sources */,
 				19B4B40D2ADEB4E800E78BB9 /* ViewController.swift in Sources */,
 				19B4B4092ADEB4E700E78BB9 /* AppDelegate.swift in Sources */,
 				19B4B40B2ADEB4E700E78BB9 /* SceneDelegate.swift in Sources */,
