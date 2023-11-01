@@ -9,6 +9,13 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var backward: UIButton!
+    
+    
+    @IBOutlet weak var forward: UIButton!
+    
+  
+    
     
     @IBAction func tapAction(_ sender: Any) {
         // セグエを使用して画面を遷移
@@ -90,7 +97,8 @@ class ViewController: UIViewController {
         UIImage(named: "swordfish")!
     ]
     
-    @IBAction func playstopbutton(_ sender: Any) {
+ 
+    @IBAction func playStop(_ sender: Any) {
         // 再生中か停止しているかを判定
         if (timer == nil) {
             // 再生時の処理を実装
@@ -99,6 +107,9 @@ class ViewController: UIViewController {
             
             //ボタンの表示を停止にする
             playstopbutton.setTitle("停止", for: .normal)
+            
+            forward.isEnabled = false
+            backward.isEnabled = false
             
             
         } else {
@@ -110,6 +121,11 @@ class ViewController: UIViewController {
             timer = nil
             //ボタンの名前を直す
             playstopbutton.setTitle("再生", for: .normal)
+            
+            forward.isEnabled = true
+            backward.isEnabled = true
+            
+           
         }
     }
     @objc func changeImage() {

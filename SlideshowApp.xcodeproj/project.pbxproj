@@ -14,6 +14,9 @@
 		19B4B4122ADEB4E800E78BB9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4112ADEB4E800E78BB9 /* Assets.xcassets */; };
 		19B4B4152ADEB4E800E78BB9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4132ADEB4E800E78BB9 /* LaunchScreen.storyboard */; };
 		19B4B41D2ADEC40100E78BB9 /* ZoomingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B4B41C2ADEC40100E78BB9 /* ZoomingViewController.swift */; };
+		19B4B4452AF2362700E78BB9 /* swordfish.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4422AF2362700E78BB9 /* swordfish.jpg */; };
+		19B4B4462AF2362700E78BB9 /* warasa.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4432AF2362700E78BB9 /* warasa.jpg */; };
+		19B4B4472AF2362700E78BB9 /* seabass.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 19B4B4442AF2362700E78BB9 /* seabass.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		19B4B4142ADEB4E800E78BB9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19B4B4162ADEB4E800E78BB9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		19B4B41C2ADEC40100E78BB9 /* ZoomingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomingViewController.swift; sourceTree = "<group>"; };
+		19B4B4422AF2362700E78BB9 /* swordfish.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = swordfish.jpg; sourceTree = "<group>"; };
+		19B4B4432AF2362700E78BB9 /* warasa.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = warasa.jpg; sourceTree = "<group>"; };
+		19B4B4442AF2362700E78BB9 /* seabass.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = seabass.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +49,9 @@
 			isa = PBXGroup;
 			children = (
 				19B4B4072ADEB4E700E78BB9 /* SlideshowApp */,
+				19B4B4442AF2362700E78BB9 /* seabass.jpg */,
+				19B4B4422AF2362700E78BB9 /* swordfish.jpg */,
+				19B4B4432AF2362700E78BB9 /* warasa.jpg */,
 				19B4B4062ADEB4E700E78BB9 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,7 +138,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				19B4B4152ADEB4E800E78BB9 /* LaunchScreen.storyboard in Resources */,
+				19B4B4452AF2362700E78BB9 /* swordfish.jpg in Resources */,
+				19B4B4472AF2362700E78BB9 /* seabass.jpg in Resources */,
 				19B4B4122ADEB4E800E78BB9 /* Assets.xcassets in Resources */,
+				19B4B4462AF2362700E78BB9 /* warasa.jpg in Resources */,
 				19B4B4102ADEB4E800E78BB9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

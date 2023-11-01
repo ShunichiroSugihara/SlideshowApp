@@ -36,6 +36,9 @@
                                 <rect key="frame" x="265" y="718" width="101" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="再生"/>
+                                <connections>
+                                    <action selector="playStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bca-42-2Hh"/>
+                                </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seabass" translatesAutoresizingMaskIntoConstraints="NO" id="PoC-wY-5D3">
                                 <rect key="frame" x="-1297" y="224" width="3024" height="300"/>
@@ -60,6 +63,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="V9g-Y8-i3T"/>
                     <connections>
+                        <outlet property="backward" destination="RYj-HA-Ezt" id="NFn-Kf-EDs"/>
+                        <outlet property="forward" destination="0yZ-IM-LcK" id="pZM-Yf-uYZ"/>
                         <outlet property="playstopbutton" destination="aS6-dU-hTT" id="eFY-dX-kJP"/>
                         <outlet property="seabass" destination="PoC-wY-5D3" id="5WO-1T-zsu"/>
                     </connections>
