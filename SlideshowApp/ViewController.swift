@@ -14,14 +14,11 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var forward: UIButton!
     
-  
     
     
-    @IBAction func tapAction(_ sender: Any) {
-        // セグエを使用して画面を遷移
-        performSegue(withIdentifier: "result", sender: nil)
-        
-    }
+    
+   
+    
     
     
     @IBOutlet weak var playstopbutton: UIButton!
@@ -30,7 +27,7 @@ class ViewController: UIViewController {
     
     
     @IBOutlet weak var seabass: UIImageView!
-    let imageName = ["seabass","warasa","swordfish"]
+    let imageName = ["seabass.jpg","warasa.jpg","swordfish.jpg"]
     var changeImageNo = 0
     
     
@@ -46,10 +43,21 @@ class ViewController: UIViewController {
         let ZoomingViewController: ZoomingViewController = segue.destination as! ZoomingViewController
         
         ZoomingViewController.Largerimages = seabass.image
+        
+        if (timer != nil) {
+            // 停止時の処理を実装
+            // タイマーを停止する
+            timer.invalidate()
+            
+            // タイマーを削除しておく(timer.invalidateだけだとtimerがnilにならないため)
+            timer = nil
+            //ボタンの名前を直す
+            playstopbutton.setTitle("再生", for: .normal)
+            //進む戻るボタンを使用可能にする
+            forward.isEnabled = true
+            backward.isEnabled = true
+            
         }
-    
-    @objc  func tapped(_ sender : UITapGestureRecognizer) {
-
     }
     
     
@@ -68,7 +76,7 @@ class ViewController: UIViewController {
     
     //進むボタン
     @IBAction func forward(_ sender: Any) {
-
+        
         if changeImageNo == 0 {
             changeImageNo = 1
         } else if changeImageNo == 1 {
@@ -90,14 +98,8 @@ class ViewController: UIViewController {
     // スライドショーに使用するタイマーを宣言
     var timer: Timer!
     
-    // スライドショーさせる画像の配列を宣言
-    var imageArray:[UIImage] = [
-        UIImage(named: "seabass")!,
-        UIImage(named: "warasa")!,
-        UIImage(named: "swordfish")!
-    ]
     
- 
+    
     @IBAction func playStop(_ sender: Any) {
         // 再生中か停止しているかを判定
         if (timer == nil) {
@@ -107,7 +109,7 @@ class ViewController: UIViewController {
             
             //ボタンの表示を停止にする
             playstopbutton.setTitle("停止", for: .normal)
-            
+            //進む戻るボタンを使用不可にする
             forward.isEnabled = false
             backward.isEnabled = false
             
@@ -121,11 +123,11 @@ class ViewController: UIViewController {
             timer = nil
             //ボタンの名前を直す
             playstopbutton.setTitle("再生", for: .normal)
-            
+            //進む戻るボタンを使用可能にする
             forward.isEnabled = true
             backward.isEnabled = true
             
-           
+            
         }
     }
     @objc func changeImage() {
@@ -140,7 +142,11 @@ class ViewController: UIViewController {
         seabass.image = UIImage(named: name)
     }
     
+    @objc  func tapped(_ sender : UITapGestureRecognizer) {
+        
+        
+    }
+    
+    
+    
 }
-
-
-

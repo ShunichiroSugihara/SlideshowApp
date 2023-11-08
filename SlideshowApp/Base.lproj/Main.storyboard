@@ -33,16 +33,15 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aS6-dU-hTT">
-                                <rect key="frame" x="265" y="718" width="101" height="35"/>
+                                <rect key="frame" x="251" y="718" width="115" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="再生"/>
                                 <connections>
                                     <action selector="playStop:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bca-42-2Hh"/>
                                 </connections>
                             </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="seabass" translatesAutoresizingMaskIntoConstraints="NO" id="PoC-wY-5D3">
-                                <rect key="frame" x="-1297" y="224" width="3024" height="300"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seabass.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PoC-wY-5D3">
+                                <rect key="frame" x="20" y="89" width="390" height="543"/>
                                 <gestureRecognizers/>
                                 <connections>
                                     <outletCollection property="gestureRecognizers" destination="ctw-fm-fHf" appends="YES" id="JSH-g0-bwy"/>
@@ -55,10 +54,14 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="RYj-HA-Ezt" secondAttribute="bottom" constant="145" id="4hd-iD-dCz"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="0yZ-IM-LcK" secondAttribute="bottom" constant="145" id="9V1-zb-C23"/>
                             <constraint firstItem="RYj-HA-Ezt" firstAttribute="leading" secondItem="0yZ-IM-LcK" secondAttribute="trailing" constant="24" id="SBH-6v-vpy"/>
+                            <constraint firstItem="PoC-wY-5D3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="VCL-Fe-YKM"/>
+                            <constraint firstAttribute="bottom" secondItem="PoC-wY-5D3" secondAttribute="bottom" constant="300" id="fUy-6Y-YuG"/>
                             <constraint firstItem="0yZ-IM-LcK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="64" id="fpb-1P-xDZ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aS6-dU-hTT" secondAttribute="trailing" constant="64" id="psP-TE-QHY"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="aS6-dU-hTT" secondAttribute="bottom" constant="145" id="s5b-2M-ZlI"/>
-                            <constraint firstItem="aS6-dU-hTT" firstAttribute="leading" secondItem="RYj-HA-Ezt" secondAttribute="trailing" constant="59" id="tdR-so-FZq"/>
+                            <constraint firstItem="aS6-dU-hTT" firstAttribute="leading" secondItem="RYj-HA-Ezt" secondAttribute="trailing" constant="45" id="tdR-so-FZq"/>
+                            <constraint firstItem="PoC-wY-5D3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="v0B-Nd-HW8"/>
+                            <constraint firstAttribute="trailing" secondItem="PoC-wY-5D3" secondAttribute="trailing" constant="20" id="yDb-Cm-aPy"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="V9g-Y8-i3T"/>
@@ -87,7 +90,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7CQ-kQ-nyI">
-                                <rect key="frame" x="185.66666666666666" y="728.66666666666663" width="58.666666666666657" height="34.333333333333371"/>
+                                <rect key="frame" x="185.66666666666666" y="728.66666666666663" width="59" height="34.333333333333371"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="tinted" title="戻る"/>
                                 <connections>
@@ -121,7 +124,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="seabass" width="3024" height="4032"/>
+        <image name="seabass.jpg" width="3024" height="4032"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
